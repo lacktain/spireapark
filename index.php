@@ -16,7 +16,7 @@
         <label for="parking-space">Parking Space:</label>
         <select id="parking-space" name="parking-space">
           <option value="1">Parkeringsplass 1</option>
-          <option value="2">Parkeringsplass 24</option>
+          <option value="24">Parkeringsplass 24</option>
         </select><br><br>
         <label for="start-time">Start Time:</label>
         <input type="datetime-local" id="start-time" name="start-time" min="<?php echo date('Y-m-d\TH:i'); ?>" max="<?php echo date('Y-m-d\TH:i', strtotime('+2 weeks')); ?>"><br><br>
@@ -32,10 +32,10 @@
         echo '<table>';
         echo '<thead>';
         echo '<tr>';
-        echo '<th>Parking Space</th>';
-        echo '<th>Reserved By</th>';
-        echo '<th>Start Time</th>';
-        echo '<th>End Time</th>';
+        echo '<th>Parkeringsplass</th>';
+        echo '<th>Reservert av</th>';
+        echo '<th>Start Tid</th>';
+        echo '<th>Slutt Tid</th>';
         echo '</tr>';
         echo '</thead>';
         echo '<tbody>';
@@ -49,7 +49,7 @@
           $end_time = $fields[4];
 
           echo '<tr>';
-          echo '<td>' . htmlspecialchars("Parking Space $parking_space") . '</td>';
+          echo '<td>' . htmlspecialchars("     $parking_space") . '</td>';
           echo '<td>' . htmlspecialchars($name) . '</td>';
           echo '<td>' . htmlspecialchars($start_time) . '</td>';
           echo '<td>' . htmlspecialchars($end_time) . '</td>';
