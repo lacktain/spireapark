@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parking Space Management</title>
+    <title>SP3 Gjesteparkering</title>
   </head>
   <body>
     <header>
-      <h1>SP3 Parking reservasjoner</h1>
+      <h1>SP3 PArkeringsreservasjoner</h1>
     </header>
     <main>
       <form>
@@ -22,7 +22,7 @@
         <input type="datetime-local" id="start-time" name="start-time" min="<?php echo date('Y-m-d\TH:i'); ?>" max="<?php echo date('Y-m-d\TH:i', strtotime('+2 weeks')); ?>"><br><br>
         <label for="end-time">End Time:</label>
         <input type="datetime-local" id="end-time" name="end-time" min="<?php echo date('Y-m-d\TH:i'); ?>" max="<?php echo date('Y-m-d\TH:i', strtotime('+2 weeks')); ?>"><br><br>
-        <input type="submit" value="Reserve">
+        <input type="submit" value="Reserver">
       </form>
       <?php
         // Read the file into an array
