@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   file_put_contents('reservations.csv', $data, FILE_APPEND);
 
   // Redirect the user to a confirmation page or display a success message
-  header('Location: index.html');
+  header('Location: index.php?message=Reservation%20successful.');
   exit;
 }
 ?>
