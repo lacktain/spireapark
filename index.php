@@ -49,7 +49,7 @@
           $end_time = $fields[4];
 
           echo '<tr>';
-          echo '<td>' . htmlspecialchars("     $parking_space") . '</td>';
+          echo '<td>' . htmlspecialchars($parking_space) . '</td>';
           echo '<td>' . htmlspecialchars($name) . '</td>';
           echo '<td>' . htmlspecialchars($start_time) . '</td>';
           echo '<td>' . htmlspecialchars($end_time) . '</td>';
