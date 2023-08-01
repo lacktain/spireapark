@@ -5,7 +5,7 @@
   </head>
   <body>
     <header>
-      <h1>SP3 PArkeringsreservasjoner</h1>
+      <h1>SP3 Parkeringsreservasjon</h1>
     </header>
     <main>
       <form>
