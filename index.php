@@ -8,7 +8,7 @@
       <h1>SP3 Parkeringsreservasjon</h1>
     </header>
     <main>
-      <form>
+      <form action="reserver.php" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
         <label for="email">Email:</label>
